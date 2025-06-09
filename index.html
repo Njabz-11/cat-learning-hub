@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Grade 12 - Interactive Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    CAT Grade 12 Learning Hub
+                </h1>
+                <p class="subtitle">Master Computer Applications Technology with Interactive Learning</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-section="system-tech">
+                <i class="fas fa-microchip"></i>
+                System Technology
+            </button>
+            <button class="nav-tab" data-section="network-internet">
+                <i class="fas fa-network-wired"></i>
+                Network & Internet
+            </button>
+            <button class="nav-tab" data-section="social-implications">
+                <i class="fas fa-users"></i>
+                Social Implications
+            </button>
+            <button class="nav-tab" data-section="solution-dev">
+                <i class="fas fa-code"></i>
+                Solution Development
+            </button>
+            <button class="nav-tab" data-section="info-management">
+                <i class="fas fa-database"></i>
+                Information Management
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- System Technology Section -->
+            <section id="system-tech" class="content-section active">
+                <h2 class="section-title">
+                    <i class="fas fa-microchip"></i>
+                    System Technology
+                </h2>
+                
+                <div class="topic-grid">
+                    <!-- Information Processing Cycle -->
+                    <div class="topic-card" data-topic="ipc">
+                        <div class="card-header">
+                            <i class="fas fa-sync-alt"></i>
+                            <h3>Information Processing Cycle (IPC)</h3>
+                        </div>
+                        <div class="card-preview">
+                            Converting raw data into meaningful information through 5 phases
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> The process of converting raw data into meaningful information to support decision-making.</p>
+                            <div class="phases">
+                                <div class="phase">
+                                    <h4><i class="fas fa-arrow-right"></i> Input</h4>
+                                    <p>Raw facts, figures, and observations collected</p>
+                                    <div class="example">Example: Customer enters product details and payment information</div>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-cogs"></i> Processing</h4>
+                                    <p>CPU executes instructions, applies formulas, or analyses data</p>
+                                    <div class="example">Example: System verifies payment, updates stock, processes order</div>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-save"></i> Storage</h4>
+                                    <p>Processed data is saved for future access</p>
+                                    <div class="example">Example: Order details saved in database</div>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-desktop"></i> Output</h4>
+                                    <p>Processed information presented in usable format</p>
+                                    <div class="example">Example: Confirmation message displayed, invoice generated</div>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-share-alt"></i> Communication</h4>
+                                    <p>Information transmitted between devices, users, or systems</p>
+                                    <div class="example">Example: Order confirmation email sent, tracking details shared</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Processors -->
+                    <div class="topic-card" data-topic="processors">
+                        <div class="card-header">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Processors (CPU)</h3>
+                        </div>
+                        <div class="card-preview">
+                            The "brain" of the computer that executes instructions and processes data
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> The "brain" of the computer; executes instructions, processes data, and controls other hardware.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-tachometer-alt"></i> Clock Speed (GHz)</h4>
+                                    <p>Measures how fast the CPU processes instructions; higher GHz means faster performance</p>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-layer-group"></i> Cores</h4>
+                                    <p>Multiple processing units allow running multiple tasks simultaneously (dual-core, quad-core)</p>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-stream"></i> Threads</h4>
+                                    <p>A sequence of instructions the CPU executes; hyper-threading increases efficiency</p>
+                                </div>
+                            </div>
+                            <div class="fit-purpose">
+                                <h4>Fit for Purpose:</h4>
+                                <div class="purpose-grid">
+                                    <div class="purpose-item basic">
+                                        <strong>Basic Use:</strong> Dual-core (Intel i3/AMD Ryzen 3), 2.5-3.0 GHz
+                                    </div>
+                                    <div class="purpose-item moderate">
+                                        <strong>Moderate Use:</strong> Quad-core (Intel i5/AMD Ryzen 5), 3.0 GHz+
+                                    </div>
+                                    <div class="purpose-item heavy">
+                                        <strong>Heavy Use:</strong> Octa-core (Intel i7/i9/AMD Ryzen 7/9), 3.5 GHz+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RAM -->
+                    <div class="topic-card" data-topic="ram">
+                        <div class="card-header">
+                            <i class="fas fa-memory"></i>
+                            <h3>RAM (Memory)</h3>
+                        </div>
+                        <div class="card-preview">
+                            Temporary storage for data and programs currently in use
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Temporary storage for data and programs currently in use, allowing faster access than permanent storage.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-hdd"></i> Capacity (GB)</h4>
+                                    <p>More RAM allows more applications to run simultaneously without slowing down</p>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-bolt"></i> Speed (MHz)</h4>
+                                    <p>Faster RAM speeds up data access</p>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-tags"></i> Type</h4>
+                                    <p>DDR4 is faster and more energy-efficient than DDR3</p>
+                                </div>
+                            </div>
+                            <div class="fit-purpose">
+                                <h4>Fit for Purpose:</h4>
+                                <div class="purpose-grid">
+                                    <div class="purpose-item basic">
+                                        <strong>Basic Use:</strong> 4-8 GB DDR4
+                                    </div>
+                                    <div class="purpose-item moderate">
+                                        <strong>Moderate Use:</strong> 8-16 GB DDR4
+                                    </div>
+                                    <div class="purpose-item heavy">
+                                        <strong>Heavy Use:</strong> 16 GB+ DDR4
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SSD vs HDD -->
+                    <div class="topic-card" data-topic="storage">
+                        <div class="card-header">
+                            <i class="fas fa-hdd"></i>
+                            <h3>SSD vs HDD Storage</h3>
+                        </div>
+                        <div class="card-preview">
+                            Types of non-volatile storage for operating systems and files
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Types of non-volatile storage for operating systems, applications, and files.</p>
+                            <div class="comparison">
+                                <div class="storage-type ssd">
+                                    <h4><i class="fas fa-microchip"></i> SSD (Solid State Drive)</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Significantly faster read/write speeds</li>
+                                        <li><i class="fas fa-check"></i> More durable (no moving parts)</li>
+                                        <li><i class="fas fa-check"></i> Lower power consumption</li>
+                                        <li><i class="fas fa-check"></i> No fragmentation needed</li>
+                                        <li><i class="fas fa-times"></i> More expensive per GB</li>
+                                    </ul>
+                                </div>
+                                <div class="storage-type hdd">
+                                    <h4><i class="fas fa-hdd"></i> HDD (Hard Disk Drive)</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Lower cost per GB</li>
+                                        <li><i class="fas fa-check"></i> Higher storage capacities</li>
+                                        <li><i class="fas fa-times"></i> Slower read/write speeds</li>
+                                        <li><i class="fas fa-times"></i> Susceptible to physical shock</li>
+                                        <li><i class="fas fa-times"></i> Higher power consumption</li>
+                                        <li><i class="fas fa-times"></i> Requires defragmentation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Network & Internet Section -->
+            <section id="network-internet" class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-network-wired"></i>
+                    Network & Internet Technologies
+                </h2>
+                <div class="topic-grid">
+                    <!-- WAN -->
+                    <div class="topic-card" data-topic="wan">
+                        <div class="card-header">
+                            <i class="fas fa-globe"></i>
+                            <h3>WAN (Wide Area Network)</h3>
+                        </div>
+                        <div class="card-preview">
+                            A network spanning large geographical areas, connecting multiple LANs
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> A network that spans a large geographical area, connecting multiple local networks (LANs) across cities, countries, or continents.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-bullseye"></i> Purpose</h4>
+                                    <ul>
+                                        <li>Enable communication across large distances</li>
+                                        <li>Facilitate data/resource sharing</li>
+                                        <li>Support remote access</li>
+                                        <li>Improve business operations</li>
+                                        <li>Enable cloud computing</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-wifi"></i> How Internet Functions as WAN</h4>
+                                    <ul>
+                                        <li>Connects billions of devices globally</li>
+                                        <li>Uses wired (fiber optic) and wireless (satellite, cellular) communication</li>
+                                        <li>Interconnects multiple LANs/MANs</li>
+                                        <li>Transfers data over long distances using TCP/IP</li>
+                                        <li>Supports various online services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="example">Example: The Internet is the largest example of a WAN</div>
+                        </div>
+                    </div>
+
+                    <!-- VPN -->
+                    <div class="topic-card" data-topic="vpn">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>VPN (Virtual Private Network)</h3>
+                        </div>
+                        <div class="card-preview">
+                            Secure access to company data over the Internet with encrypted connections
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> A device that allows users to securely access company data over the Internet. It creates an encrypted connection over a public network.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-cogs"></i> How it Works</h4>
+                                    <ul>
+                                        <li>Masks actual location</li>
+                                        <li>Encrypts data transmission</li>
+                                        <li>Ensures user anonymity</li>
+                                        <li>Creates secure tunnel through public networks</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-check-circle"></i> Advantages</h4>
+                                    <ul>
+                                        <li>Blocks unauthorized access</li>
+                                        <li>Secures communications</li>
+                                        <li>Bypasses geo-blocking</li>
+                                        <li>Prevents data interception</li>
+                                        <li>Enables secure remote work</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bandwidth vs Broadband -->
+                    <div class="topic-card" data-topic="bandwidth">
+                        <div class="card-header">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h3>Bandwidth vs Broadband</h3>
+                        </div>
+                        <div class="card-preview">
+                            Understanding the difference between connection capacity and connection type
+                        </div>
+                        <div class="card-content">
+                            <div class="comparison">
+                                <div class="storage-type">
+                                    <h4><i class="fas fa-chart-line"></i> Bandwidth</h4>
+                                    <p><strong>Definition:</strong> The amount of data that can be transmitted over a network in a given time (measured in bps).</p>
+                                    <ul>
+                                        <li><i class="fas fa-info-circle"></i> Affects speed and efficiency of data transfer</li>
+                                        <li><i class="fas fa-info-circle"></i> Measured in Kbps, Mbps, Gbps</li>
+                                        <li><i class="fas fa-info-circle"></i> Determines how much data can flow</li>
+                                    </ul>
+                                </div>
+                                <div class="storage-type">
+                                    <h4><i class="fas fa-broadcast-tower"></i> Broadband</h4>
+                                    <p><strong>Definition:</strong> High-speed, always-on internet access. It is a type of internet connection.</p>
+                                    <ul>
+                                        <li><i class="fas fa-info-circle"></i> Provides the infrastructure</li>
+                                        <li><i class="fas fa-info-circle"></i> Always-on connection</li>
+                                        <li><i class="fas fa-info-circle"></i> Supports multiple data types</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="example">Relationship: Broadband provides the infrastructure, and bandwidth is the capacity of that infrastructure</div>
+                        </div>
+                    </div>
+
+                    <!-- Network Reasons -->
+                    <div class="topic-card" data-topic="network-reasons">
+                        <div class="card-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Reasons for Networks</h3>
+                        </div>
+                        <div class="card-preview">
+                            Why organizations and individuals use networks
+                        </div>
+                        <div class="card-content">
+                            <div class="phases">
+                                <div class="phase">
+                                    <h4><i class="fas fa-share-alt"></i> Resource Sharing</h4>
+                                    <p>Sharing hardware (printers, scanners) and software across multiple users</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-comments"></i> Communication</h4>
+                                    <p>Fast and efficient communication through email, instant messaging, video calls</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-database"></i> Centralized Data Storage</h4>
+                                    <p>Easier management and backup of data in central locations</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-shield-alt"></i> Improved Security</h4>
+                                    <p>Centralized control over data access and security policies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Implications Section -->
+            <section id="social-implications" class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-users"></i>
+                    Social Implications
+                </h2>
+                <div class="topic-grid">
+                    <!-- Identity Theft -->
+                    <div class="topic-card" data-topic="identity-theft">
+                        <div class="card-header">
+                            <i class="fas fa-user-secret"></i>
+                            <h3>Identity Theft</h3>
+                        </div>
+                        <div class="card-preview">
+                            Using someone else's personal information without permission to commit fraud
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Using someone else's personal information (name, address, financial details) without permission to commit fraud or other crimes.</p>
+                            <div class="phases">
+                                <div class="phase">
+                                    <h4><i class="fas fa-exclamation-triangle"></i> How it Happens</h4>
+                                    <ul>
+                                        <li>Data breaches from companies</li>
+                                        <li>Social engineering attacks</li>
+                                        <li>Phishing emails and websites</li>
+                                        <li>Unauthorized sharing of personal data</li>
+                                        <li>Skimming devices on ATMs</li>
+                                    </ul>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-impact"></i> Impact</h4>
+                                    <ul>
+                                        <li>Financial fraud and loss</li>
+                                        <li>Damage to credit reputation</li>
+                                        <li>Legal complications</li>
+                                        <li>Emotional stress and anxiety</li>
+                                        <li>Time-consuming recovery process</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ergonomics -->
+                    <div class="topic-card" data-topic="ergonomics">
+                        <div class="card-header">
+                            <i class="fas fa-chair"></i>
+                            <h3>Ergonomics</h3>
+                        </div>
+                        <div class="card-preview">
+                            Designing environments to fit people, focusing on comfort and preventing injury
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> The science of designing and arranging products and environments to fit the people who use them, focusing on comfort and preventing injury.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-desktop"></i> Computer Setup</h4>
+                                    <ul>
+                                        <li>Monitor at eye level</li>
+                                        <li>Proper chair height and support</li>
+                                        <li>Keyboard at comfortable height</li>
+                                        <li>Mouse placement within easy reach</li>
+                                        <li>Adequate lighting to reduce eye strain</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-user-md"></i> Health Benefits</h4>
+                                    <ul>
+                                        <li>Reduces physical strain and fatigue</li>
+                                        <li>Improves posture and spinal health</li>
+                                        <li>Increases comfort and productivity</li>
+                                        <li>Prevents repetitive strain injuries</li>
+                                        <li>Reduces eye strain and headaches</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="example">Best Practice: Take regular breaks, sit up straight, stretch regularly, and look away from screen every 20 minutes</div>
+                        </div>
+                    </div>
+
+                    <!-- Malware -->
+                    <div class="topic-card" data-topic="malware">
+                        <div class="card-header">
+                            <i class="fas fa-virus"></i>
+                            <h3>Malware Types</h3>
+                        </div>
+                        <div class="card-preview">
+                            Malicious software designed to harm or exploit devices and networks
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Malicious software designed to harm or exploit a device, network, or server.</p>
+                            <div class="phases">
+                                <div class="phase">
+                                    <h4><i class="fas fa-bug"></i> Virus</h4>
+                                    <p>Replicates itself, spreads to other files, and causes damage or steals data</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-horse"></i> Trojan</h4>
+                                    <p>Disguised as legitimate software but allows unauthorized access to systems</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-worm"></i> Worms</h4>
+                                    <p>Self-replicating malware that spreads across networks without user interaction</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-lock"></i> Ransomware</h4>
+                                    <p>Encrypts user data and demands payment for decryption key</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-eye"></i> Spyware</h4>
+                                    <p>Secretly gathers information about users and their activities</p>
+                                </div>
+                            </div>
+                            <div class="fit-purpose">
+                                <h4>Protection Methods:</h4>
+                                <ul>
+                                    <li>Antivirus/anti-malware software</li>
+                                    <li>Firewalls and network security</li>
+                                    <li>Email filters and spam protection</li>
+                                    <li>Regular software updates</li>
+                                    <li>Safe browsing practices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cryptocurrency -->
+                    <div class="topic-card" data-topic="cryptocurrency">
+                        <div class="card-header">
+                            <i class="fab fa-bitcoin"></i>
+                            <h3>Cryptocurrency as Payment</h3>
+                        </div>
+                        <div class="card-preview">
+                            Digital currencies using cryptography, operating independently of central banks
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Digital or virtual currencies that use cryptography for security, operating independently of central banks (e.g., Bitcoin, Ethereum).</p>
+                            <div class="comparison">
+                                <div class="storage-type">
+                                    <h4><i class="fas fa-check"></i> Advantages</h4>
+                                    <ul>
+                                        <li><i class="fas fa-dollar-sign"></i> Lower transaction fees</li>
+                                        <li><i class="fas fa-clock"></i> Fast international transfers</li>
+                                        <li><i class="fas fa-globe"></i> Global accessibility</li>
+                                        <li><i class="fas fa-user-shield"></i> No intermediaries needed</li>
+                                        <li><i class="fas fa-chart-line"></i> Investment opportunities</li>
+                                    </ul>
+                                </div>
+                                <div class="storage-type">
+                                    <h4><i class="fas fa-times"></i> Disadvantages</h4>
+                                    <ul>
+                                        <li><i class="fas fa-chart-line"></i> High price volatility</li>
+                                        <li><i class="fas fa-store"></i> Limited merchant acceptance</li>
+                                        <li><i class="fas fa-cog"></i> Technical complexity</li>
+                                        <li><i class="fas fa-gavel"></i> Regulatory uncertainty</li>
+                                        <li><i class="fas fa-leaf"></i> Environmental concerns</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="example">Impact: Financial inclusion for unbanked populations and alternative investment opportunities</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solution Development Section -->
+            <section id="solution-dev" class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Solution Development
+                </h2>
+                <div class="topic-grid">
+                    <!-- HTML Features -->
+                    <div class="topic-card" data-topic="html">
+                        <div class="card-header">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML Features</h3>
+                        </div>
+                        <div class="card-preview">
+                            Hypertext Markup Language used to structure content on the web
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Hypertext Markup Language, used to structure content on the web.</p>
+                            <div class="phases">
+                                <div class="phase">
+                                    <h4><i class="fas fa-list"></i> Lists</h4>
+                                    <p>Ordered (&lt;ol&gt;) and unordered (&lt;ul&gt;) lists to organize information</p>
+                                    <div class="example">Example: &lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</div>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-table"></i> Tables</h4>
+                                    <p>&lt;table&gt; element to display data in rows and columns</p>
+                                    <div class="example">Example: &lt;table&gt;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</div>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-image"></i> Images</h4>
+                                    <p>&lt;img&gt; tag to embed images in a webpage</p>
+                                    <div class="example">Example: &lt;img src="image.jpg" alt="Description"&gt;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Excel Features -->
+                    <div class="topic-card" data-topic="excel">
+                        <div class="card-header">
+                            <i class="fas fa-file-excel"></i>
+                            <h3>Excel Features</h3>
+                        </div>
+                        <div class="card-preview">
+                            Spreadsheet application for data analysis, calculations, and visualization
+                        </div>
+                        <div class="card-content">
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-calculator"></i> Functions and Formulas</h4>
+                                    <ul>
+                                        <li><strong>SUM:</strong> Adds up values in a range</li>
+                                        <li><strong>AVERAGE:</strong> Calculates mean of values</li>
+                                        <li><strong>COUNT:</strong> Counts cells with numbers</li>
+                                        <li><strong>IF:</strong> Conditional logic statements</li>
+                                        <li><strong>VLOOKUP/HLOOKUP:</strong> Search and retrieve data</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-tools"></i> Key Features</h4>
+                                    <ul>
+                                        <li><strong>Fill Handle:</strong> Copy formulas to adjacent cells</li>
+                                        <li><strong>Relative vs Absolute:</strong> Cell reference behavior when copying</li>
+                                        <li><strong>Charts:</strong> Visual data representation</li>
+                                        <li><strong>Pivot Tables:</strong> Data summarization and analysis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Access Features -->
+                    <div class="topic-card" data-topic="access">
+                        <div class="card-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Access Features</h3>
+                        </div>
+                        <div class="card-preview">
+                            Database management system for storing and organizing data
+                        </div>
+                        <div class="card-content">
+                            <div class="phases">
+                                <div class="phase">
+                                    <h4><i class="fas fa-mask"></i> Input Masks</h4>
+                                    <p>String of characters that dictates format for data entry into a field</p>
+                                    <div class="example">Examples: Phone numbers (000) 000-0000, Dates MM/DD/YYYY</div>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-search"></i> Query Criteria</h4>
+                                    <p>Conditions used in queries to filter and retrieve specific data from tables</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-cog"></i> Table Properties</h4>
+                                    <p>Characteristics of fields in database table (data type, field size, validation rules)</p>
+                                </div>
+                            </div>
+                            <div class="fit-purpose">
+                                <h4>Benefits of Input Masks:</h4>
+                                <ul>
+                                    <li>Data consistency and standardization</li>
+                                    <li>Reduced data entry errors</li>
+                                    <li>User-friendly data entry</li>
+                                    <li>Professional appearance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collaboration -->
+                    <div class="topic-card" data-topic="collaboration">
+                        <div class="card-header">
+                            <i class="fas fa-users"></i>
+                            <h3>Collaboration Tools</h3>
+                        </div>
+                        <div class="card-preview">
+                            Working together on projects using shared tools and platforms
+                        </div>
+                        <div class="card-content">
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-tools"></i> Collaboration Tools</h4>
+                                    <ul>
+                                        <li>Cloud services (Google Drive, OneDrive)</li>
+                                        <li>Video conferencing (Zoom, Teams)</li>
+                                        <li>Instant messaging (Slack, WhatsApp)</li>
+                                        <li>Project management platforms</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-edit"></i> Track Changes</h4>
+                                    <p>Feature that records edits (insertions, deletions, formatting changes) made to a document, allowing multiple users to review and accept/reject changes.</p>
+                                </div>
+                            </div>
+                            <div class="fit-purpose">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Increased productivity and efficiency</li>
+                                    <li>Improved communication between team members</li>
+                                    <li>Remote work capability</li>
+                                    <li>Real-time editing and feedback</li>
+                                    <li>Version control and change tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Information Management Section -->
+            <section id="info-management" class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-database"></i>
+                    Information Management
+                </h2>
+                <div class="topic-grid">
+                    <!-- Source Evaluation -->
+                    <div class="topic-card" data-topic="source-evaluation">
+                        <div class="card-header">
+                            <i class="fas fa-search"></i>
+                            <h3>Evaluation of Sources</h3>
+                        </div>
+                        <div class="card-preview">
+                            Critically assessing the reliability and credibility of information sources
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Critically assessing the reliability and credibility of information sources.</p>
+                            <div class="phases">
+                                <div class="phase">
+                                    <h4><i class="fas fa-check-circle"></i> Accuracy</h4>
+                                    <p>Is the information factual and free from errors?</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-user-graduate"></i> Authority/Credibility</h4>
+                                    <p>Who is the author? Are they an expert? Is the source reputable?</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-balance-scale"></i> Objectivity</h4>
+                                    <p>Is the information biased or impartial?</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-calendar"></i> Currency</h4>
+                                    <p>Is the information up-to-date and relevant?</p>
+                                </div>
+                                <div class="phase">
+                                    <h4><i class="fas fa-layer-group"></i> Coverage</h4>
+                                    <p>Is the information comprehensive and complete?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Referencing Sources -->
+                    <div class="topic-card" data-topic="referencing">
+                        <div class="card-header">
+                            <i class="fas fa-quote-right"></i>
+                            <h3>Referencing Sources</h3>
+                        </div>
+                        <div class="card-preview">
+                            Acknowledging original creators to avoid plagiarism and give proper credit
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Acknowledging the original creators of information used in your work to avoid plagiarism.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-info-circle"></i> Information to Include</h4>
+                                    <ul>
+                                        <li>Author/creator/photographer/artist name</li>
+                                        <li>Title of the work or image</li>
+                                        <li>Website/hyperlink to original source</li>
+                                        <li>Date of creation/publication</li>
+                                        <li>Publisher or organization</li>
+                                    </ul>
+                                </div>
+                                <div class="spec-item">
+                                    <h4><i class="fas fa-exclamation-triangle"></i> Why It's Important</h4>
+                                    <ul>
+                                        <li>Avoid plagiarism and academic dishonesty</li>
+                                        <li>Give proper credit to original creators</li>
+                                        <li>Enable readers to verify information</li>
+                                        <li>Maintain academic and professional integrity</li>
+                                        <li>Respect intellectual property rights</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graphs and Data Visualization -->
+                    <div class="topic-card" data-topic="graphs">
+                        <div class="card-header">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Graphs and Data Visualization</h3>
+                        </div>
+                        <div class="card-preview">
+                            Visual representations of data to show trends, comparisons, and relationships
+                        </div>
+                        <div class="card-content">
+                            <p><strong>Definition:</strong> Visual representations of data, used to show trends, comparisons, and relationships.</p>
+                            <div class="comparison">
+                                <div class="storage-type">
+                                    <h4><i class="fas fa-chart-bar"></i> Types of Graphs</h4>
+                                    <ul>
+                                        <li><i class="fas fa-chart-bar"></i> Bar charts - comparing categories</li>
+                                        <li><i class="fas fa-chart-line"></i> Line graphs - showing trends over time</li>
+                                        <li><i class="fas fa-chart-pie"></i> Pie charts - showing parts of a whole</li>
+                                        <li><i class="fas fa-braille"></i> Scatter plots - showing relationships</li>
+                                    </ul>
+                                </div>
+                                <div class="storage-type">
+                                    <h4><i class="fas fa-lightbulb"></i> Reasons for Using</h4>
+                                    <ul>
+                                        <li><i class="fas fa-eye"></i> Visual communication (easier understanding)</li>
+                                        <li><i class="fas fa-trending-up"></i> Highlighting trends and patterns</li>
+                                        <li><i class="fas fa-balance-scale"></i> Comparing different data sets</li>
+                                        <li><i class="fas fa-compress"></i> Simplifying complex data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 CAT Grade 12 Learning Hub. Master your Computer Applications Technology concepts!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
